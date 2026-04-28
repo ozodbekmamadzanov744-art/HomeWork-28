@@ -16,6 +16,8 @@ public class Main {
         cats.sort(Comparator.comparing(Cat::getName).thenComparing(Cat::getAge));
         Printer.print(cats);
 
+        cats.removeIf(cat -> cat.getColor() == Cat.Color.GINGER);
+        Printer.print(cats);
 
     }
 }
