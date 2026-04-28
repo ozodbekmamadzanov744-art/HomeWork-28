@@ -19,5 +19,8 @@ public class Main {
         cats.removeIf(cat -> cat.getColor() == Cat.Color.GINGER);
         Printer.print(cats);
 
+        cats.removeIf(cat -> cat.getName().length() == 5);
+        Printer.print(cats);
+
     }
 }
